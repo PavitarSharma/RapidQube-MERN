@@ -1,0 +1,41 @@
+### SignUp user
+POST http://localhost:3000/api/v1/users/register
+Content-Type: application/json
+
+{
+    "username": "John",
+    "email": "john@gmail.com",
+    "password": "123456789"
+}
+
+### Login user
+POST http://localhost:3000/api/v1/users/login
+Content-Type: application/json
+
+{
+    "email": "john@gmail.com",
+    "password": "123456789"
+}
+
+### Get Single User
+GET http://localhost:3000/api/v1/users/64144f4c5882c633c15b09dc
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MTQ0ZjRjNTg4MmM2MzNjMTViMDlkYyIsImVtYWlsIjoiam9obkBnbWFpbC5jb20iLCJpYXQiOjE2NzkwNTMxMDksImV4cCI6MTY3OTEzOTUwOX0.fJ5QhYfRnOXqKgwzcokDzMHJrey9lr3mZld1VJOuUOE
+
+
+### Get All User
+GET http://localhost:3000/api/v1/users
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MTQ0ZjRjNTg4MmM2MzNjMTViMDlkYyIsImVtYWlsIjoiam9obkBnbWFpbC5jb20iLCJpYXQiOjE2NzkwNTMxMDksImV4cCI6MTY3OTEzOTUwOX0.fJ5QhYfRnOXqKgwzcokDzMHJrey9lr3mZld1VJOuUOE
+
+### Logout User
+POST  http://localhost:3000/api/v1/users/logout
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MTQ0ZjRjNTg4MmM2MzNjMTViMDlkYyIsImVtYWlsIjoiam9obkBnbWFpbC5jb20iLCJpYXQiOjE2NzkwNTMxMDksImV4cCI6MTY3OTEzOTUwOX0.fJ5QhYfRnOXqKgwzcokDzMHJrey9lr3mZld1VJOuUOE
+
+
+
+### Delete User
+DELETE  http://localhost:3000/api/v1/users/64144f4c5882c633c15b09dc
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MTQ0ZjRjNTg4MmM2MzNjMTViMDlkYyIsImVtYWlsIjoiam9obkBnbWFpbC5jb20iLCJpYXQiOjE2NzkwNTMxMDksImV4cCI6MTY3OTEzOTUwOX0.fJ5QhYfRnOXqKgwzcokDzMHJrey9lr3mZld1VJOuUOE
